@@ -1,0 +1,47 @@
+@import start
+
+.banner
+.banner__title
+  font-size: 50px
+  font-weight: bold
+  line-height: 1.2
+.banner__text
+  position: relative
+  max-width: 505px
+  padding: 50px 0
+
+.banner-item
+  padding: 1.875rem 3.125rem 6.5625rem
+  transform: translateY(-205px)
+  background: linear-gradient(90deg, rgba(8, 109, 177, 0.43) 0%, rgba(19, 110, 172, 0) 63.02%), url(../img/content/banner.jpg)
+.square-block
+  color: inherit
+  position: absolute
+  top: 0
+  left: -30%
+  height: 100%
+  width: 90%
+  border: 5px solid currentColor
+  border-right: 1px solid transparent
+  pointer-events: none
+  &:after
+    content: ''
+    position: absolute
+    width: 5px
+    height: 7%
+    background-color: currentColor
+    right: -5px
+    top: -5px
+  &:before
+    content: ''
+    position: absolute
+    width: 5px
+    height: 20%
+    background-color: currentColor
+    right: -5px
+    bottom: -5px
+
+.catalog
+  margin-top: -125px
+
+@import media

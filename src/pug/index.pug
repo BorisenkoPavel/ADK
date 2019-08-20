@@ -1,0 +1,17 @@
+extends templates/main
+
+block variables
+	- var title = 'Главная страница'
+	- var pageClass = 'index-page'
+block content
+	section.banner.bg-info.pt-0
+		.container
+			.banner-item.text-white
+				.banner__text.w-50.d-flex.flex-column.align-items-start
+					.banner__title.pb-4 Инженерное и&nbsp;сантехническое оборудование
+					big.banner__subtitle.pb-4 Поставляем продукцию оптом и&nbsp;в&nbsp;розницу Гибкая система скидок и&nbsp;оплаты
+					.btn.btn-outline-light.rounded-pill Узнать подробнее
+					.square-block.text-info
+	section.catalog
+		.container 
+			p sadk
