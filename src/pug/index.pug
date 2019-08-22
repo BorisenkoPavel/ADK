@@ -5,24 +5,29 @@ block variables
 	- var pageClass = 'index-page'
 block content
 	section.banner.bg-info.pt-0
-		.banner-carousel(data-flickity='{ "wrapAround": true }')
+		.banner-carousel.white-dots(data-flickity='{"wrapAround": true, "prevNextButtons": false}')
 			.carousel-cell
 				.container
 					.banner-item.text-white
-						.banner__text.w-50.d-flex.flex-column.align-items-start
+						.banner__text.w-lg-50.d-flex.flex-column.align-items-start
 							.banner__title.pb-4 Инженерное и&nbsp;сантехническое оборудование
 							big.banner__subtitle.pb-4 Поставляем продукцию оптом и&nbsp;в&nbsp;розницу Гибкая система скидок и&nbsp;оплаты
 							.btn.btn-outline-light.rounded-pill Узнать подробнее
-							.square-block.text-info
+							.square-block
 			.carousel-cell
 				.container
 					.banner-item.text-white
-							.banner__text.w-50.d-flex.flex-column.align-items-start
-								.banner__title.pb-4 Инженерное и&nbsp;сантехническое оборудование
-								big.banner__subtitle.pb-4 Поставляем продукцию оптом и&nbsp;в&nbsp;розницу Гибкая система скидок и&nbsp;оплаты
-								.btn.btn-outline-light.rounded-pill Узнать подробнее
-								.square-block.text-info
+						.banner__text.w-lg-50.d-flex.flex-column.align-items-start
+							.banner__title.pb-4 Инженерное и&nbsp;сантехническое оборудование
+							big.banner__subtitle.pb-4 Поставляем продукцию оптом и&nbsp;в&nbsp;розницу Гибкая система скидок и&nbsp;оплаты
+							.btn.btn-outline-light.rounded-pill Узнать подробнее
+							.square-block
+			
 	section.section-catalog.bg-info
+		h2 lksad
+		h3 ks
+		p.subtitle js
+		h5 jlq
 		.container
 			h1.section-title.text-center Каталог
 			.catalog.mb-5
@@ -195,43 +200,43 @@ block content
 					.btn.btn-danger.rounded-pill.btn-small Купить
 				.card
 					.card__icon.embed-responsive.embed-responsive-1by1.mb-3
-						.embed-responsive-item(style="background: url(img/content/card-item.png) no-repeat center/contain")
+						.embed-responsive-item(style="background: url('img/content/card-item (1).png') no-repeat center/contain")
 					.card__name.mb-1 Затвор дисковый BAODI
 					.card__price.mb-3 570.00 ₽
 					.btn.btn-danger.rounded-pill.btn-small Купить
 				.card
 					.card__icon.embed-responsive.embed-responsive-1by1.mb-3
-						.embed-responsive-item(style="background: url(img/content/card-item.png) no-repeat center/contain")
+						.embed-responsive-item(style="background: url('img/content/card-item (2).png') no-repeat center/contain")
 					.card__name.mb-1 Затвор дисковый BAODI
 					.card__price.mb-3 570.00 ₽
 					.btn.btn-danger.rounded-pill.btn-small Купить
 				.card
 					.card__icon.embed-responsive.embed-responsive-1by1.mb-3
-						.embed-responsive-item(style="background: url(img/content/card-item.png) no-repeat center/contain")
+						.embed-responsive-item(style="background: url('img/content/card-item (3).png') no-repeat center/contain")
 					.card__name.mb-1 Затвор дисковый BAODI
 					.card__price.mb-3 570.00 ₽
 					.btn.btn-danger.rounded-pill.btn-small Купить
 				.card
 					.card__icon.embed-responsive.embed-responsive-1by1.mb-3
-						.embed-responsive-item(style="background: url(img/content/card-item.png) no-repeat center/contain")
+						.embed-responsive-item(style="background: url('img/content/card-item (7).png') no-repeat center/contain")
 					.card__name.mb-1 Затвор дисковый BAODI
 					.card__price.mb-3 570.00 ₽
 					.btn.btn-danger.rounded-pill.btn-small Купить
 				.card
 					.card__icon.embed-responsive.embed-responsive-1by1.mb-3
-						.embed-responsive-item(style="background: url(img/content/card-item.png) no-repeat center/contain")
+						.embed-responsive-item(style="background: url('img/content/card-item (4).png') no-repeat center/contain")
 					.card__name.mb-1 Затвор дисковый BAODI
 					.card__price.mb-3 570.00 ₽
 					.btn.btn-danger.rounded-pill.btn-small Купить
 				.card
 					.card__icon.embed-responsive.embed-responsive-1by1.mb-3
-						.embed-responsive-item(style="background: url(img/content/card-item.png) no-repeat center/contain")
+						.embed-responsive-item(style="background: url('img/content/card-item (5).png') no-repeat center/contain")
 					.card__name.mb-1 Затвор дисковый BAODI
 					.card__price.mb-3 570.00 ₽
 					.btn.btn-danger.rounded-pill.btn-small Купить
 				.card
 					.card__icon.embed-responsive.embed-responsive-1by1.mb-3
-						.embed-responsive-item(style="background: url(img/content/card-item.png) no-repeat center/contain")
+						.embed-responsive-item(style="background: url('img/content/card-item (6).png') no-repeat center/contain")
 					.card__name.mb-1 Затвор дисковый BAODI
 					.card__price.mb-3 570.00 ₽
 					.btn.btn-danger.rounded-pill.btn-small Купить
@@ -239,7 +244,7 @@ block content
 	section.section-manufacturers.pt-0.pb-4
 		.container
 			h1.section-title.text-center.mb-5 Производители
-			.manufacturers-carousel.pb-3(data-flickity='{ "cellAlign": "left", "wrapAround": true}')
+			.manufacturers-carousel.pb-3(data-flickity='{ "cellAlign": "left", "wrapAround": true, "prevNextButtons": false}')
 				.carousel-cell.embed-responsive.embed-responsive-21by9.mb-3
 					.embed-responsive-item(style="background: url('img/content/partners (1).png') no-repeat center/contain")
 				.carousel-cell.embed-responsive.embed-responsive-21by9.mb-3
@@ -255,3 +260,46 @@ block content
 	section.section-news
 		.container
 			h1.section-title.text-center.mb-5 Новости
+			.news-widget
+				.news-item.news-item--main
+					.embed-responsive.embed-responsive-4by3.mb-3
+						.embed-responsive-item(style="background: url(img/content/news.jpg) no-repeat center/cover")
+					.news-item__date 12 июня 2019
+					.news-item__name Сезонное снижение цен на продукцию PRO AQUA
+					.news-item__desc
+				.news-item.d-none.d-md-block
+					.embed-responsive.embed-responsive-1by1.mb-3
+						.embed-responsive-item(style="background: url(img/content/news1.jpg) no-repeat center/cover")
+					.news-item__date 12 июня 2019
+					.news-item__name Росалпайп — теперь дешевле!
+					.news-item__desc Уважаемые партнёры! Теперь внутренняя канализация "ROSALPIPE" стала ещё доступнее!
+				.news-item__container
+					.news-item.mb-4.d-none.d-md-block
+						.embed-responsive.embed-responsive-1by1.mb-3
+							.embed-responsive-item(style="background: url(img/content/news2.jpg) no-repeat center/cover")
+						.news-item__date 12 июня 2019
+						.news-item__name Сезонное снижение цен на радиаторы HALSEN
+						.news-item__desc Уважаемые партнёры! В нашей компании произошло сезонное снижение цен
+					.btn.btn-outline-dark.rounded-pill Все новости
+	section.section-company.bg-primary.pb-xxl-0
+		.container
+			.row
+				.col-lg-6.position-relative.d-none.d-lg-block
+					.company-carousel.white-dots(data-flickity='{ "wrapAround": true, "prevNextButtons": false}')
+						.carousel-cell
+							.embed-responsive.embed-responsive-1by1.mb-3
+								.embed-responsive-item(style="background: url(img/content/news1.jpg) no-repeat center/cover")
+						.carousel-cell
+							.embed-responsive.embed-responsive-1by1.mb-3
+								.embed-responsive-item(style="background: url(img/content/news1.jpg) no-repeat center/cover")
+						.carousel-cell
+							.embed-responsive.embed-responsive-1by1.mb-3
+								.embed-responsive-item(style="background: url(img/content/news1.jpg) no-repeat center/cover")
+				.col-lg-6
+					.company-content.text-white.position-relative
+						.company-content__title: h1: b Наша компания
+						.company-content__subtitle.subtitle: p Алтайская Деловая Компания (АДК) занимается поставками и комплектацией сантехнического оборудования и сопутствующих материалов с момента своего основания в ноябре 1992 года.
+						.company-content__text.mb-5
+							p Более двадцати лет назад, в самом начале своего пути, компания редставляла собой небольшую фирму, четко определившую свою рыночную нишу — профессиональная торговля широким спектром инженерно-сантехнического оборудования. Из года в год мы стремились к тому, чтобы наши возможности соответствовали запросам клиентов. В настоящее время Алтайская Деловая Компания занимает прочное место на региональном рынке.
+						.square-block
+						.btn.btn-outline-light.rounded-pill Подробнее

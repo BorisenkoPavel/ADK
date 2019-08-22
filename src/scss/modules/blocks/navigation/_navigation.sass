@@ -1,5 +1,29 @@
 .nav-link, .nav-link
-  color: $text
+  color: inherit
   line-height: 40px
 .nav-link:hover, .nav-link:focus
   color: $red
+
+body
+  .flickity-page-dots
+    display: flex
+    align-items: center
+    justify-content: center
+    .dot.is-selected
+      width: 1.5rem
+      height: 1.5rem
+      background-color: $red
+    .dot
+      width: 1rem
+      height: 1rem
+      cursor: pointer
+      opacity: 1
+.white-dots
+  .dot.is-selected
+    background-color: $red!important
+  .dot
+    background-color: #fff!important
+.company-carousel, .banner-carousel
+  .flickity-page-dots
+    justify-content: flex-start
+  

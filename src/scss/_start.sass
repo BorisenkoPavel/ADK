@@ -10,6 +10,7 @@ html
 body
 	height: 100%
 	font-family: $d-font
+	line-height: 1.4
 
 h1
 	font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem
@@ -41,13 +42,15 @@ h1, h2, h3, h4, h5, h6
 	margin-bottom: 1.45em
 
 .subtitle
-	font-size: 20px
+	font-size: 23rem
+	@include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font*0.94, $mod_2*$mod_2 *$min_font*0.93)
 
 .text-small
 	font-size: 0.875rem
 
 .text-big
-	font-size: 1.125rem
+	font-size: $mod_1*$mod_1 *1rem
+	@include fluid-type($min_width, $max_width, $mod_1 *$min_font, $mod_2 *$min_font)
 
 .b
 	font-weight: bold
@@ -76,10 +79,10 @@ button
 	display: flex
 	flex-direction: column
 	height: 100%
+	overflow-x: hidden
 
 .content
 	flex: 1 0 auto
-
 section
 	position: relative
 	padding: 4.5rem 0

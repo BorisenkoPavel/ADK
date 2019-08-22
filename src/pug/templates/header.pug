@@ -1,7 +1,7 @@
-header.header
+header.header.d-flex.d-lg-block.justify-content-between
   .header-top
     .container.d-flex.justify-content-between.align-items-center
-      ul.nav
+      ul.nav.d-none.d-lg-flex
         li.nav-item
           a.nav-link(href="") О компании
         li.nav-item
@@ -12,18 +12,18 @@ header.header
           a.nav-link(href="") Помощь покупателю
         li.nav-item
           a.nav-link(href="") Информация
-      a.icon-link-block.pl-xxl-5.link(href="")
-        img.mr-2(src="img/general/price.svg", alt="")
-        | Прайс-лист
+      a.icon-link-block.pl-xxl-5.link.d-none.d-lg-block(href="")
+        img.mr-lg-2(src="img/general/price.svg", alt="")
+        span Прайс-лист
       a.icon-link-block.link(href="")
-        img.mr-2(src="img/general/lk.svg", alt="")
-        | Личный кабинет
+        img.mr-lg-2(src="img/general/lk.svg", alt="")
+        span Личный кабинет
   .header-middle
     .container.d-flex.align-items-center.justify-content-between
-      a.logo.d-flex.align-items-center.nolink(href="/")
-        img.pr-3(src="img/general/logo.svg", alt="")
-        big Инженерное<br>и сантехническое<br> оборудование
-      .addres-block.d-flex.justify-content-between
+      a.logo.d-flex.align-items-center.nolink.mr-3(href="/")
+        img.pr-lg-3.w-100(src="img/general/logo.svg", alt="")
+        big.d-none.d-lg-block Инженерное<br>и&nbsp;сантехническое<br> оборудование
+      .addres-block.d-none.d-lg-flex.justify-content-between
         .address-item.d-flex.flex-column
           b.address-item__city.mb-1 Барнаул
           a.address-item__phone.link(href="+73852266800") <span class="text-black-50">+7 (3852)</span> 26-68-00
@@ -34,14 +34,14 @@ header.header
           b.address-item__city.mb-1 Рубцовск
           a.address-item__phone.link(href="+73852745335") <span class="text-black-50">+7 (3852)</span> 74-53-35
   .header-bottom
-    .container.d-flex.align-items-center.justify-content-between
-      .hamburger.text-secondary.d-flex.mr-5.align-items-center
+    .container.d-flex.align-items-end.align-items-lg-center.justify-content-between.flex-column-reverse.flex-lg-row
+      .hamburger.text-secondary.d-flex.mr-lg-5.align-items-center
         .hamburger-box
           .hamburger-inner
-        big.ml-3.b Каталог
-      label.search
+        big.ml-3.b.d-none.d-lg-block Каталог
+      label.search.d-none.d-lg-block
         input.w-100(type="search" placeholder="Введите ключевое слово... ")
         img.search-icon(src="img/general/search.svg", alt="")
-      a.icon-link-block.link(href="").ml-5
-        img.mr-2(src="img/general/cart.svg", alt="")
-        | Корзина
+      a.icon-link-block.link(href="").ml-lg-5
+        img.mr-lg-2(src="img/general/cart.svg", alt="")
+        span Корзина
