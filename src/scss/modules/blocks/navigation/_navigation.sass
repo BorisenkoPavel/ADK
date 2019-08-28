@@ -3,21 +3,27 @@
   line-height: 40px
 .nav-link:hover, .nav-link:focus
   color: $red
-
+.news-link
+  color: inherit
+  &:hover
+    text-decoration: none
+    color: inherit
+    .news-item__name
+      color: $accent
 body
   .flickity-page-dots
     display: flex
     align-items: center
     justify-content: center
     .dot.is-selected
-      width: 1.5rem
-      height: 1.5rem
+      transform: scale(1.4)
       background-color: $red
     .dot
       width: 1rem
       height: 1rem
       cursor: pointer
       opacity: 1
+      transition: .4s ease
 .white-dots
   .dot.is-selected
     background-color: $red!important
@@ -27,3 +33,10 @@ body
   .flickity-page-dots
     justify-content: flex-start
   
+.breadcrumb-item + .breadcrumb-item::before
+  background: url(../img/general/polygon.svg) no-repeat center/80%
+  width: 8px
+  height: 10px
+  margin-right: 10px
+.breadcrumb-item a
+  text-decoration: underline

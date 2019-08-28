@@ -1,0 +1,52 @@
+extends ../templates/main
+
+block variables
+	- var title = 'Каталог'
+	- var pageClass = 'index-page'
+block content
+	nav.mt-4(aria-label)
+		.container
+			ol.breadcrumb.bg-white.px-0
+				li.breadcrumb-item: a(href="") Главная
+				li.breadcrumb-item: a(href="") Каталог
+				li.breadcrumb-item.active(aria-current="page") Ванны
+	section.section-catalog-page.p-0
+		.container
+			h1.section-title Ванны
+			.row
+				.col-3
+					.filtr-block
+						h5 Фильтр
+						label(for="country") Страна производства
+							select#country(name="country")
+								option Португалия
+								option Польша
+								option(selected="selected") Парагвай
+								option Россия
+								option Румыния
+								option Испания
+						label(for="speed") Длина
+							select#speed(name="speed")
+								option Португалия
+								option Польша
+								option(selected="selected") Парагвай
+								option Россия
+								option Румыния
+								option Испания
+						label(for="speed") Ширина
+							select#speed(name="speed")
+								option Португалия
+								option Польша
+								option(selected="selected") Парагвай
+								option Россия
+								option Румыния
+								option Испания
+						label(for="speed") Глубина
+							select#speed(name="speed")
+								option Португалия
+								option Польша
+								option(selected="selected") Парагвай
+								option Россия
+								option Румыния
+								option Испания
+						
