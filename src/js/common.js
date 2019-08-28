@@ -7,12 +7,22 @@ $(document).ready(function () {
 
   svg4everybody({});
   
- $('.hamburger').on('click', function(){
-   $(this).toggleClass('is-active')
-   $('.menu-content').toggleClass('is-active')
- })
+  $('.hamburger').on('click', function(){
+    $(this).toggleClass('is-active')
+    $('.menu-content').toggleClass('is-active')
+  })
 
- $( "#country" ).selectmenu();
+  $( "#inputCountry" ).selectmenu();
+  $( "#inputLength" ).selectmenu();
+  $( "#inputWidth" ).selectmenu();
+  $( "#inputDeep" ).selectmenu();
+  $(".js-range-slider").ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 1000,
+    from: 200,
+    to: 500,
+  });
 
   // $(function() {
   //   var lastElement = false;

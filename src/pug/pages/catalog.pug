@@ -12,41 +12,99 @@ block content
 				li.breadcrumb-item.active(aria-current="page") Ванны
 	section.section-catalog-page.p-0
 		.container
-			h1.section-title Ванны
+			h1.b Ванны
 			.row
 				.col-3
-					.filtr-block
-						h5 Фильтр
-						label(for="country") Страна производства
-							select#country(name="country")
-								option Португалия
-								option Польша
-								option(selected="selected") Парагвай
-								option Россия
-								option Румыния
-								option Испания
-						label(for="speed") Длина
-							select#speed(name="speed")
-								option Португалия
-								option Польша
-								option(selected="selected") Парагвай
-								option Россия
-								option Румыния
-								option Испания
-						label(for="speed") Ширина
-							select#speed(name="speed")
-								option Португалия
-								option Польша
-								option(selected="selected") Парагвай
-								option Россия
-								option Румыния
-								option Испания
-						label(for="speed") Глубина
-							select#speed(name="speed")
-								option Португалия
-								option Польша
-								option(selected="selected") Парагвай
-								option Россия
-								option Румыния
-								option Испания
-						
+					form.filtr-block
+						h5.b.mb-4 Фильтр
+						fieldset
+							label.w-100(for="inputCountry") Страна производства
+								select.input-item#inputCountry(name="inputCountry")
+									option Португалия
+									option Польша
+									option Парагвай
+									option Россия
+									option Румыния
+									option Испания
+							label.w-100(for="inputLength") Длина
+								select.input-item#inputLength(name="inputLength")
+									option Португалия
+									option Польша
+									option Парагвай
+									option Россия
+									option Румыния
+									option Испания
+							label.w-100(for="inputWidth") Ширина
+								select.input-item#inputWidth(name="inputWidth")
+									option Португалия
+									option Польша
+									option Парагвай
+									option Россия
+									option Румыния
+									option Испания
+							label.w-100(for="inputDeep") Глубина
+								select.input-item#inputDeep(name="inputDeep")
+									option Португалия
+									option Польша
+									option Парагвай
+									option Россия
+									option Румыния
+									option Испания
+						input(type="text" class="js-range-slider" name="my_range" value="")
+						.input-container--row.d-flex.align-items-center.mb-4
+							label.text-black-50.pr-3(for="input-before") От
+							input(type="text")#input-before.input-item
+							label.text-black-50.pr-3(for="input-after") до
+							input(type="text")#input-after.input-item
+						.btn-container--row.d-flex.align-items-center.justify-content-between
+							.btn.btn-primary.rounded-pill.btn-small Применить
+							a.text-primary.p-0.cross-link.link(href="#") 
+								+icon('cross')
+								<span>Сбросить</span>
+				.col-9
+					.btn-group.mb-4
+						.btn.btn-primary.btn-small.rounded-pill
+							span Акриловые ванны
+							span.btn-count 18
+						.btn.btn-primary.btn-small.rounded-pill
+							span Стальные ванны
+							span.btn-count 26
+						.btn.btn-primary.btn-small.rounded-pill
+							span Чугунные ванны
+							span.btn-count 32
+						.btn.btn-primary.btn-small.rounded-pill
+							span Ванны из кварила
+							span.btn-count 8
+						.btn.btn-primary.btn-small.rounded-pill
+							span Керамические ванны
+							span.btn-count 6
+						.btn.btn-primary.btn-small.rounded-pill
+							span Каменные ванны
+							span.btn-count 8
+					.filtr-group.mb-3
+						.filtr-item__selected.mr-4 Страна производитель: <a href="" class='text-dark link'>Польша</a>
+							+icon('cross')
+						.filtr-item__selected.mr-4 Длинна: <a href="" class='text-dark link'>980</a>
+							+icon('cross')
+						.filtr-item__selected.mr-4 Ширина: <a href="" class='text-dark link'>430</a>
+							+icon('cross')
+						.filtr-item__selected Глубина: <a href="" class='text-dark link'>430</a>
+							+icon('cross')
+					.sorting-group.d-flex.align-items-end
+						.sort-item.mr-5 Сортировать по:
+							a(href="").text-danger.link.mx-3
+								+icon('Frame','mr-2') 
+								span.dotted цене
+							a(href="").text-danger.link
+								+icon('Frame','mr-2') 
+								span.dotted названию A-Я
+						.sort-item Вид:
+								+icon('row','sort-icon') 
+								+icon('column','sort-icon')
+					.card-item__list
+						.card-item
+							.card-item__img.embed-responsive.embed-responsive-16by9
+								.embed-responsive-item(src="", type="")(style="background: url('img/content/card-img1.jpg')")
+							.card-item__name Ванна стальная EMALIA
+							.spec-list Производитель: Польша Размер: 170x70 Глубина: 390
+								.spec-list__item 

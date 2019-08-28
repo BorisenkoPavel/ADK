@@ -1,0 +1,86 @@
+.input-item ~ .ui-selectmenu-button.ui-button, .input-item
+	padding-left: 0.625rem
+	height: 45px
+	width: 100%
+	background: #F0F7FC
+	border: 1px solid #F0F7FC
+	display: flex
+	justify-content: space-between
+	flex-direction: row-reverse
+	align-items: center
+.irs--flat
+	margin: 10px 0
+.irs--flat .irs-line 
+	height: 2px!important
+.irs--flat .irs-bar
+	background-color: $accent!important
+	height: 2px!important
+.irs--flat .irs-handle 
+	height: 8px!important
+	width: 8px!important
+.irs--flat .irs-handle>i:first-child
+	border-radius: 50%
+	background-color: $accent!important
+	width: 8px!important
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single
+	background-color: $accent!important
+.irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before
+	border-top-color: $accent!important
+.input-container--row
+	label
+		display: flex
+		&:last-of-type:before
+			content: '\2014'
+			display: inline-block
+			padding: 0 10px
+.btn-count
+	font-weight: normal
+
+.btn-group
+	display: grid
+	grid-template-columns: 1fr 1fr 1fr
+	grid-gap: 20px
+	.btn
+		justify-content: space-between
+		display: flex
+
+.cross-link
+	display: flex
+	align-items: center
+
+.icon-cross
+	width: 9px
+	height: 9px
+	fill: $accent
+	margin: 0 5px
+
+.filtr-item__selected, .sorting-group
+	color: #AFB5BA
+
+.filtr-group
+	display: flex
+
+.icon-Frame
+	width: 18px
+	height: 11px
+	fill: $red
+	margin: 0 5px
+.sort-item
+	display: flex
+	align-items: baseline
+.sort-icon
+	width: 23px
+	height: 23px
+	fill: #5A6470
+	cursor: pointer
+	transition: .3s ease
+	margin-left: 15px
+	&:hover
+		fill: $red
+.sort-icon.active
+	fill: $red
+.icon-row
+	width: 21px
+	height: 21px
+
+.d
