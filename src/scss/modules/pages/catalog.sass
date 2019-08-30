@@ -1,3 +1,11 @@
+.ui-button:active
+	color: inherit!important
+.ui-button .ui-icon
+	width: 8px
+	height: 8px
+	border: 4px solid transparent
+	border-top: 4px solid $accent
+	background: transparent!important
 .input-item ~ .ui-selectmenu-button.ui-button, .input-item
 	padding-left: 0.625rem
 	height: 45px
@@ -83,4 +91,118 @@
 	width: 21px
 	height: 21px
 
-.d
+.count-block *
+	width: 1.875rem
+	height: 2rem
+	border: none
+	font-weight: 500
+	transition: .4s ease
+.count-block__minus, .count-block__plus
+	display: flex
+	align-items: center
+	justify-content: center
+	cursor: pointer
+	color: #fff
+	background-color: $accent
+	&:hover
+		background-color: $red
+		color: #fff
+.count-block__value 
+	background-color: #F0F7FC
+	margin: 0 2px
+	text-align: center
+
+.card-item__list
+	display: grid
+	grid-template-columns: 1fr 1fr 1fr
+	grid-gap: 15px
+
+.card-item
+	padding: 2rem
+	cursor: pointer
+	border: 1px solid #D1E3E8
+	transition: .3s ease
+	display: flex
+	flex-direction: column
+	&:hover
+		box-shadow: 0px 0px 15px rgba(57, 77, 92, 0.15)
+		border: 1px solid transparent
+	&__img
+		flex: 0 0 auto
+		margin-bottom: 1.5rem
+	&__body
+		flex: 1 1 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+	&__footer
+		flex: 0 0 auto
+	&__header
+		flex: 1 1 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		margin-bottom: 1.5rem
+	&__price-container
+		display: flex
+		align-items: center
+		justify-content: space-evenly
+		margin-bottom: 1.5rem
+.spec-list
+	flex-direction: column
+
+.card-item__list.card-item__list--row
+	grid-template-columns: 1fr
+	.card-item
+		flex-direction: row
+		&__img
+			margin-right: 1.25rem
+			width: 100px
+			margin-bottom: 0
+		&__body
+			flex-direction: row
+		&__footer
+			flex-direction: row
+			display: flex
+			align-items: center
+		&__header
+			margin-bottom: 0
+			justify-content: center
+			text-align: left
+			margin-right: 1.25rem
+		&__price-container
+			margin-bottom: 0
+			margin-right: 2.5rem
+		&__price
+			margin-right: 2.5rem
+	.spec-list
+		flex-direction: row
+	.spec-list__item
+		margin-right: 5px
+		&::after
+			content: ','
+		&:last-child::after
+			display: none
+.spec-list__name-hidden
+	display: none
+
+.banner-block
+	grid-column: 1/-1
+	position: relative
+	display: block
+	&::before
+		content: ''
+		left: 0
+		right: 0
+		bottom: 0
+		top: 0
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0.83) 0%, rgba(255, 255, 255, 0) 101.65%)
+		position: absolute
+	&__content
+		position: relative
+		display: inline-block
+		padding: 1.5rem
+	.square-block
+		top: -5px
+		left: -10px
+		width: 65%

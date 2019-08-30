@@ -7,6 +7,7 @@ $(document).ready(function () {
 
   svg4everybody({});
   
+
   $('.hamburger').on('click', function(){
     $(this).toggleClass('is-active')
     $('.menu-content').toggleClass('is-active')
@@ -34,6 +35,31 @@ $(document).ready(function () {
   //   }).last().addClass("nobullet");
   // });​
 
+  $('.count-block__minus').click(function () {
+    var $input = $(this).parent().find('.count-block__value');
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+  });
+
+  $('.count-block__plus').click(function () {
+    var $input = $(this).parent().find('.count-block__value');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+  })
+  
+  $('.sort-icon').on('click', function(){
+    $('.sort-icon').removeClass('active')
+    $(this).addClass('active')
+    if($('.icon-row').hasClass('active')) {
+      $('.card-item__list').addClass('card-item__list--row')
+    } else {
+      $('.card-item__list').removeClass('card-item__list--row')
+    }
+  })
 
 })
 

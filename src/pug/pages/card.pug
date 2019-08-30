@@ -1,0 +1,99 @@
+extends ../templates/main
+
+block variables
+	- var title = 'Карточка'
+	- var pageClass = 'index-page'
+block content
+	nav.mt-4(aria-label)
+		.container
+			ol.breadcrumb.bg-white.px-0
+				li.breadcrumb-item: a(href="") Главная
+				li.breadcrumb-item: a(href="") Каталог
+				li.breadcrumb-item.active(aria-current="page") Ванны
+	section.section-product-card.p-0
+		.container
+			h1.section-title Ванна стальная EMALIA
+			.row
+				.col-6.d-flex.align-items-center
+					.embed-responsive.embed-responsive-1by1
+						.embed-responsive-item(style="background: url('img/content/card-img4.jpg') no-repeat center/contain")
+				.col-6
+					h5.b.mb-4 Характеристики
+					.spec-list.d-flex.mb-2
+						.spec-list__item.border-bottom.d-flex.justify-content-between.pb-2.mb-3 <span>Производитель:</span> <b>Испания</b>
+						.spec-list__item.border-bottom.d-flex.justify-content-between.pb-2.mb-3 <span>Размер:</span> <b>150x75</b>
+						.spec-list__item.border-bottom.d-flex.justify-content-between.pb-2.mb-3 <span>Глубина:</span> <b>430</b>
+					.card-item__price-container.flex-column.align-items-start.border-bottom.mb-0.pb-4
+						.product-card__price 363 ₽/шт
+						.count-block.d-flex.align-items-end.mb-1
+							.count-block__minus -
+							input.count-block__value(type='text', value='1')
+							.count-block__plus +
+					.total-price.d-flex.justify-content-between.align-items-center.py-4
+						.card-item__price Итого: 7 363 ₽/шт
+						.btn.btn-danger.rounded-pill Купить
+					.available-block
+						.spec-list.d-flex.mb-2
+							.spec-list__item.border-bottom.d-flex.justify-content-between.pb-2 <span>Барнаул</span> <b>В наличии</b>
+							.spec-list__item.border-bottom.d-flex.justify-content-between.pb-2 <span>Бийск</span> <b>Через 7 дней</b>
+							.spec-list__item.border-bottom.d-flex.justify-content-between.pb-2 <span>Рубцовск</span> <b>В наличии</b>
+	section.section-related
+		.container
+			h2.section-title.text-center Сопутствующие товары
+			.related-products(data-flickity='{ "cellAlign": "left", "wrapAround": true, "prevNextButtons": false, "freeScroll": true}')
+				.carousel-cell
+					.card
+						.card__icon.embed-responsive.embed-responsive-1by1.mb-3
+							.embed-responsive-item(style="background: url(img/content/card-item.png) no-repeat center/contain")
+						.card__name.mb-1 Затвор дисковый BAODI
+						.card__price.mb-3 570.00 ₽
+						.btn.btn-danger.rounded-pill.btn-small Купить
+				.carousel-cell
+					.card
+						.card__icon.embed-responsive.embed-responsive-1by1.mb-3
+							.embed-responsive-item(style="background: url('img/content/card-item (2).png') no-repeat center/contain")
+						.card__name.mb-1 Водосчетчик ВСКМ 90 универсальный
+						.card__price.mb-3 420.00 ₽
+						.btn.btn-danger.rounded-pill.btn-small Купить
+				.carousel-cell
+					.card
+						.card__icon.embed-responsive.embed-responsive-1by1.mb-3
+							.embed-responsive-item(style="background: url('img/content/card-item (3).png') no-repeat center/contain")
+						.card__name.mb-1 Диск отрезной по металлу (Луга)
+						.card__price.mb-3 16.00 ₽
+						.btn.btn-danger.rounded-pill.btn-small Купить
+				.carousel-cell
+					.card
+						.card__icon.embed-responsive.embed-responsive-1by1.mb-3
+							.embed-responsive-item(style="background: url('img/content/card-item (4).png') no-repeat center/contain")
+						.card__name.mb-1 Диск зачистной(Луга)
+						.card__price.mb-3 42.00 ₽
+						.btn.btn-danger.rounded-pill.btn-small Купить
+				.carousel-cell
+					.card
+						.card__icon.embed-responsive.embed-responsive-1by1.mb-3
+							.embed-responsive-item(style="background: url('img/content/card-item (5).png') no-repeat center/contain")
+						.card__name.mb-1 Затвор дисковый BAODI
+						.card__price.mb-3 570.00 ₽
+						.btn.btn-danger.rounded-pill.btn-small Купить
+				.carousel-cell
+					.card
+						.card__icon.embed-responsive.embed-responsive-1by1.mb-3
+							.embed-responsive-item(style="background: url('img/content/card-item (6).png') no-repeat center/contain")
+						.card__name.mb-1 Радиатор GRANT 500/100
+						.card__price.mb-3 117.00 ₽
+						.btn.btn-danger.rounded-pill.btn-small Купить
+				.carousel-cell
+					.card
+						.card__icon.embed-responsive.embed-responsive-1by1.mb-3
+							.embed-responsive-item(style="background: url('img/content/card-item (1).png') no-repeat center/contain")
+						.card__name.mb-1 Кран шаровый BAODI
+						.card__price.mb-3 570.00 ₽
+						.btn.btn-danger.rounded-pill.btn-small Купить
+				.carousel-cell
+					.card
+						.card__icon.embed-responsive.embed-responsive-1by1.mb-3
+							.embed-responsive-item(style="background: url('img/content/card-item (7).png') no-repeat center/contain")
+						.card__name.mb-1 Водосчетчик ОСВУ
+						.card__price.mb-3 2 680.00 ₽
+						.btn.btn-danger.rounded-pill.btn-small Купить
