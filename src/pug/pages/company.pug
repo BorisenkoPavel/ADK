@@ -1,0 +1,88 @@
+extends ../templates/main
+
+block variables
+	- var title = 'О компании'
+block content
+	nav.mt-4(aria-label)
+		.container
+			ol.breadcrumb.bg-white.px-0
+				li.breadcrumb-item: a(href="") Главная
+				li.breadcrumb-item: a(href="") Каталог
+				li.breadcrumb-item.active(aria-current="page") Ванны
+	section.about-us.pt-0
+		.container
+			h1.section-title О компании
+			.row
+				.col-lg-6.position-relative.d-none.d-lg-block
+					.embed-responsive.embed-responsive-1by1.mb-3
+						.embed-responsive-item(style="background: url(img/content/company.jpg) no-repeat center/cover")
+				.col-lg-6
+					.company-content.position-relative
+						.company-content__subtitle.subtitle: p Алтайская Деловая Компания (АДК) занимается поставками и комплектацией сантехнического оборудования и сопутствующих материалов с момента своего основания в ноябре 1992 года.
+						.company-content__text.mb-5
+							p Более двадцати лет назад, в самом начале своего пути, компания редставляла собой небольшую фирму, четко определившую свою рыночную нишу — профессиональная торговля широким спектром инженерно-сантехнического оборудования. Из года в год мы стремились к тому, чтобы наши возможности соответствовали запросам клиентов. В настоящее время Алтайская Деловая Компания занимает прочное место на региональном рынке.
+							p Более двадцати лет назад, в самом начале своего пути, компания редставляла собой небольшую фирму, четко определившую свою рыночную нишу — профессиональная торговля широким спектром инженерно-сантехнического оборудования.
+						.square-block.text-info
+	section.section-manufacturers.pt-0
+		.container
+			h1.section-title.text-center.mb-5 Производители
+			.manufacturers-carousel.pb-3(data-flickity='{ "cellAlign": "left", "wrapAround": true, "prevNextButtons": false}')
+				.carousel-cell.embed-responsive.embed-responsive-21by9.mb-3
+					.embed-responsive-item(style="background: url('img/content/partners (1).png') no-repeat center/contain")
+				.carousel-cell.embed-responsive.embed-responsive-21by9.mb-3
+					.embed-responsive-item(style="background: url('img/content/partners (2).png') no-repeat center/contain")
+				.carousel-cell.embed-responsive.embed-responsive-21by9.mb-3
+					.embed-responsive-item(style="background: url('img/content/partners (3).png') no-repeat center/contain")
+				.carousel-cell.embed-responsive.embed-responsive-21by9.mb-3
+					.embed-responsive-item(style="background: url('img/content/partners (1).png') no-repeat center/contain")
+				.carousel-cell.embed-responsive.embed-responsive-21by9.mb-3
+					.embed-responsive-item(style="background: url('img/content/partners (4).png') no-repeat center/contain")
+				.carousel-cell.embed-responsive.embed-responsive-21by9.mb-3
+					.embed-responsive-item(style="background: url('img/content/partners (2).png') no-repeat center/contain")
+	section.section-numbers
+		.container
+			h1.section-title.text-center Компания в цифрах
+			.row
+				.col-3.px-5
+					.number-block
+						.number-block__value#num1 25
+						.number-block__name лет на рынке
+						.square-block.text-info
+				.col-3.px-5
+					.number-block
+						.number-block__value#num2 73
+						.number-block__name партнера
+						.square-block.text-info
+				.col-3.px-5
+					.number-block
+						.number-block__value#num3 3
+						.number-block__name офиса
+						.square-block.text-info
+				.col-3.px-5
+					.number-block
+						.number-block__value#num4 55
+						.number-block__name сотрудников
+						.square-block.text-info
+
+	section.saection-gallery
+		.container
+			h1.section-title.text-center Галерея
+			.gallery-carousel.pb-3(data-flickity='{ "cellAlign": "left", "wrapAround": true, "prevNextButtons": false}')
+				.carousel-cell
+					.gallery-container
+						.gallery-photo.embed-responsive.embed-responsive-1by1
+							.embed-responsive-item(style="background: url(img/content/news.jpg) no-repeat center/cover")
+				.carousel-cell
+					.gallery-container.gallery-container--grid
+						.gallery-photo.embed-responsive.embed-responsive-1by1
+							.embed-responsive-item(style="background: url(img/content/news1.jpg) no-repeat center/cover")
+						.gallery-photo.embed-responsive.embed-responsive-1by1
+								.embed-responsive-item(style="background: url(img/content/news2.jpg) no-repeat center/cover")
+						.gallery-photo.embed-responsive.embed-responsive-1by1
+								.embed-responsive-item(style="background: url(img/content/news1.jpg) no-repeat center/cover")
+						.gallery-photo.embed-responsive.embed-responsive-1by1
+								.embed-responsive-item(style="background: url(img/content/news.jpg) no-repeat center/cover")
+				.carousel-cell
+					.gallery-container
+						.gallery-photo.embed-responsive.embed-responsive-1by1
+							.embed-responsive-item(style="background: url(img/content/news.jpg) no-repeat center/cover")

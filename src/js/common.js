@@ -61,6 +61,60 @@ $(document).ready(function () {
     }
   })
 
-})
+
+  var marker = true;
+	function count() {
+			$('#num1').animate({
+					num: 25 - 0 /* - начало */
+				}, {
+					duration: 1500,
+					step: function (num) {
+						this.innerHTML = ((num + 0).toFixed()).replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + ' ')
+					}
+				});
+				$('#num2').animate({
+					num2: 73 - 0 /* - начало */
+				}, {
+					duration: 1500,
+					step: function (num2) {
+						this.innerHTML = ((num2 + 0).toFixed()).replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + ' ')
+					}
+				});
+				$('#num3').animate({
+					num3: 3 - 0 /* - начало */
+				}, {
+					duration: 1500,
+					step: function (num3) {
+						this.innerHTML = ((num3 + 0).toFixed()).replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + ' ')
+					}
+				});
+				$('#num4').animate({
+					num4: 55 - 0 /* - начало */
+				}, {
+					duration: 1500,
+					step: function (num4) {
+						this.innerHTML = ((num4 + 0).toFixed()).replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + ' ')
+					}
+				});
+
+			marker = false;
+	}
+
+
+  if(window.location.toString().indexOf('company.html')>0)
+  {
+    $(window).scroll(function () {
+
+        var offset = $('.number-block').offset()
+      		if ($(this).scrollTop() >= offset.top-300) {
+      				if ( marker ) {
+                count();
+            }
+      		}
+    
+      })
+  }
+
+  })
 
 

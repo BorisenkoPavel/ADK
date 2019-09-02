@@ -1,0 +1,50 @@
+.about-us
+	.company-content
+		z-index: 100
+		margin-top: -3.5rem
+		.square-block
+			&::after
+				height: 5%
+			&:before
+				height: 10%
+
+.number-block__value
+	font-size: 120px
+	color: $accent
+	font-weight: bold
+	background: #fff
+	display: inline-block
+	line-height: 1
+	padding: 0 5px
+.number-block__name
+	font-size: 1.375rem
+	text-align: left
+.number-block
+	position: relative
+	text-align: center
+	.square-block
+		border: 5px solid currentColor
+		border-bottom: 5px solid currentColor
+		height: 7.5rem
+		left: 0
+		width: 100%
+		z-index: -1
+		top: -15%
+		&::before
+			display: none
+		&::after
+			display: none
+
+.section-numbers
+	.section-title
+		margin-bottom: 5.5rem
+	
+.gallery-carousel
+	.carousel-cell
+		padding: 10px
+		width: 50%
+
+.gallery-container.gallery-container--grid
+	display: grid
+	grid-template-columns: 1fr 1fr
+	grid-gap: 20px

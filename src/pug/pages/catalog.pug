@@ -2,7 +2,6 @@ extends ../templates/main
 
 block variables
 	- var title = 'Каталог'
-	- var pageClass = 'index-page'
 block content
 	nav.mt-4(aria-label)
 		.container
@@ -111,7 +110,7 @@ block content
 								+icon('row','sort-icon') 
 								+icon('column','sort-icon active')
 					.card-item__list.pb-5
-						.card-item.text-center
+						.card-item.card-item--new.text-center
 							.card-item__img.embed-responsive.embed-responsive-4by3
 								.embed-responsive-item(style="background: url('img/content/card-img1.jpg') no-repeat center/contain")
 							.card-item__body

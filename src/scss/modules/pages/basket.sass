@@ -1,0 +1,51 @@
+.section-basket
+	.card-item__body
+		flex: 1 1 100%
+		align-items: center
+	.card-item__header
+		flex: 0 0 35%
+	.card-item__footer
+		flex: 1 1 100%
+	.card-item__price-container
+		width: 100%
+		justify-content: flex-start
+	.card-item__price
+		text-align: left
+		flex: 0 0 35%
+		margin-right: 0!important
+	.count-block
+		flex: 0 0 35%
+.delete-icon
+	width: 50px
+	height: 50px
+	fill: #878787
+	transition: .5s ease
+	padding: 16px
+	&:hover
+		transform: rotate(180deg)
+	
+.basket-cols-title
+	display: flex
+	margin-bottom: 1rem
+.basket-cols-title__name
+	flex: 0 0 calc(35% + 100px)
+.basket-cols-title__price
+	flex: 0 0 35%
+.basket-cols-title__total
+	flex: 0 0 35%
+.basket-cols-title__quantity
+	flex: 0 0 35%
+.basket-cols-container
+	flex: 0 0 calc(60% - 165px)
+	display: flex
+	justify-content: flex-start
+
+.checkout-block
+	display: flex
+	align-items: center
+	justify-content: flex-end
+	padding: 1.875rem
+	margin-top: 20px
+.checkout-block__total
+	font-size: 1.875rem
+	font-weight: bold

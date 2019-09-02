@@ -13,12 +13,34 @@
 .related-products
 	.carousel-cell
 		width: 25%
-		padding: 0 10px
+		padding: 0.625rem 0.625rem 2.875rem
 		min-height: 100%
 		display: flex
-
+	.card
+		padding: 1.5rem
+	.spec-list
+		margin-bottom: 1.5rem
 .available-block
 	.spec-list__item
 		margin-bottom: 1rem
 		&:last-of-type
 			margin-bottom: 0
+
+.carousel-cell .card
+	.btn
+		opacity: 1
+		transform: translate(0)
+
+section.section-related
+	padding-bottom: 8rem
+
+.product-card__photo
+	border: 1px solid #EFEFEF
+	&::after
+		content: ''
+		position: absolute
+		width: 41px
+		height: 41px
+		background: url(../img/general/zoom.svg)
+		bottom: 1.25rem
+		right: 1.25rem

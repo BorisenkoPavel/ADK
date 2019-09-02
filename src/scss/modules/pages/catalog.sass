@@ -104,6 +104,8 @@
 	cursor: pointer
 	color: #fff
 	background-color: $accent
+	&::selection
+		background: transparent
 	&:hover
 		background-color: $red
 		color: #fff
@@ -183,8 +185,8 @@
 			content: ','
 		&:last-child::after
 			display: none
-.spec-list__name-hidden
-	display: none
+	.spec-list__name-hidden
+		display: none
 
 .banner-block
 	grid-column: 1/-1
@@ -206,3 +208,15 @@
 		top: -5px
 		left: -10px
 		width: 65%
+.card-item--new
+	position: relative
+	&:before
+		content: 'Новинка'
+		position: absolute
+		left: -1px
+		top: -1px
+		color: #ffffff
+		background: $red
+		padding: 0.3125rem 0.9375rem
+		z-index: 20
+		font-weight: bold
