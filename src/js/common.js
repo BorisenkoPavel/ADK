@@ -7,6 +7,9 @@ $(document).ready(function () {
 
   svg4everybody({});
   
+  $('.filtr-block-title').on('click', function(){
+    $('.filtr-block').slideToggle()
+  })
 
   $('.hamburger').on('click', function(){
     $(this).toggleClass('is-active')

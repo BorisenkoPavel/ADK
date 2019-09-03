@@ -35,10 +35,37 @@
     padding: 1rem
   .addres-block
     max-width: 480px
-  .card-item__list, .btn-group
-    grid-template-columns: 1fr 1fr
+  .filtr-block
+    left: 15px
+    right: 15px
+    background-color: #fff
+    display: none
+  .filtr-block-title
+    background-color: $accent
+    text-align: center
+    border-radius: 1.875rem
+    padding: .3rem
+    color: #fff
+    line-height: 1.5
+  .related-products
+    .carousel-cell
+      width: 33.3333%
 // ≥992px
 +media-breakpoint-down(md)
+  .menu-content
+    top: 90px
+  .logo
+    img
+      width: auto!important
+      height: 60px
+  .product-card__photo
+    width: 50%
+    margin: auto
+    margin-bottom: 1.5rem
+  .card-item__list
+    grid-template-columns: 1fr 1fr
+  .btn-group, .filtr-group, .sort-item.sort-item--view-icon
+    display: none!important
   .toggle-container.container
     padding: 0
     max-width: 100%
@@ -56,10 +83,11 @@
     max-width: 720px
     margin: auto
     width: 100%
-    padding: 1.875rem
+    padding: 15px 0
+    position: static
   .hamburger
-    padding-right: 0!important
-    padding-left: 0!important
+    padding: 0!important
+    padding-left: 15px!important
   .icon-link-block span
     display: none
   .header-bottom
@@ -93,19 +121,58 @@
     left: -1.875rem
   .section-news 
     padding-bottom: calc(2rem + 2.5vw)
-
+  .related-products
+    .carousel-cell
+      width: 50%
+  .about-us .company-content
+    margin-top: 0
+  .about-us
+    .embed-responsive-1by1
+      &::before
+        padding-top: 50%
+  .header-top
+    align-items: center
+    display: flex
+    .container
+      padding: 0!important
+  .card .btn
+    transform: translatey(0)
+    opacity: 1
 // ≥768px
 +media-breakpoint-down(sm)
+  .catalog
+    grid-template-columns: repeat(1, 1fr)
   header
     max-width: 540px
   .news-widget
     grid-template-columns: 1fr
   .news-item__container
     text-align: center
-  .card-item__list
-    grid-template-columns: 1fr
 // ≥576px
 +media-breakpoint-down(xs)
+  .saection-gallery
+    .carousel-cell
+      width: 100%
+  .about-us
+    .embed-responsive-1by1
+      &::before
+        padding-top: 100%
+  .number-block
+    .square-block
+      display: block!important
+  .related-products
+    .carousel-cell
+      width: 100%
+  .card-item__price
+    font-size: 1.3744rem
+  .product-card__photo
+    width: 75%
+  .card-item__img
+    width: 70%
+    margin: auto
+    margin-bottom: 1rem
+  .card-item__list 
+    grid-template-columns: 1fr
   .company-content
     padding: 0
   .square-block
@@ -118,6 +185,13 @@
     grid-template-columns: repeat(1, 1fr)
   .manufacturers-carousel .carousel-cell
     width: 100%
+  .sort-item
+    justify-content: space-between
+    margin-right: 0!important
+    width: 100%
+    & > span
+      display: none
+    
 /*==========  mobile First  ==========*/
 
 // ≤576px

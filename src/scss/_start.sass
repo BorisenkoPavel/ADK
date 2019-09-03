@@ -82,6 +82,7 @@ button
 	
 .content
 	flex: 1 0 auto
+	overflow-x: hidden
 section
 	position: relative
 	padding: 3.75rem 0
@@ -109,3 +110,11 @@ small
 .card-item__price
 	font-size: 1.875rem
 	font-weight: bold
+
+.zoom-animation
+	transition: .5s
+	-webkit-backface-visibility: hidden
+	-moz-backface-visibility: hidden
+	-ms-backface-visibility: hidden
+	&:hover
+		transform: scale(1.1)

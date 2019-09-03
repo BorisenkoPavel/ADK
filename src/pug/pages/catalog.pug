@@ -13,9 +13,9 @@ block content
 		.container
 			h1.b Ванны
 			.row
-				.col-3
+				.col-xl-3
+					h5.filtr-block-title.b.mb-4 Фильтр
 					form.filtr-block.mb-5
-						h5.b.mb-4 Фильтр
 						fieldset
 							label.w-100(for="inputCountry") Страна производства
 								select.input-item#inputCountry(name="inputCountry")
@@ -60,12 +60,12 @@ block content
 							a.text-primary.p-0.cross-link.link(href="#") 
 								+icon('cross')
 								<span>Сбросить</span>
-					a.nolink.banner-block.pb-4(href="" style="background: url('img/content/banner-wide.jpg') no-repeat center/cover")
+					a.nolink.banner-block.pb-4.d-none.d-xl-block(href="" style="background: url('img/content/banner-wide.jpg') no-repeat center/cover")
 						.banner-block__content.p-3
 							h4.banner-block__title.text-danger.b Скидка 10 %
 							p Смесители для раковины <br>Solone 
 							.square-block.text-info
-				.col-9
+				.col-xl-9
 					.btn-group.mb-4
 						.btn.btn-primary.btn-small.rounded-pill
 							span Акриловые ванны
@@ -99,14 +99,14 @@ block content
 							a(href="" class='text-dark link') 430
 								+icon('cross')
 					.sorting-group.d-flex.align-items-end.mb-4
-						.sort-item.mr-5 Сортировать по:
-							a(href="").text-danger.link.mx-3
+						.sort-item.mr-5 <span>Сортировать по:</span>
+							a(href="").text-danger.link.mx-sm-3
 								+icon('Frame','mr-2') 
 								span.dotted цене
 							a(href="").text-danger.link
 								+icon('Frame','mr-2') 
 								span.dotted названию A-Я
-						.sort-item Вид:
+						.sort-item.sort-item--view-icon Вид:
 								+icon('row','sort-icon') 
 								+icon('column','sort-icon active')
 					.card-item__list.pb-5
