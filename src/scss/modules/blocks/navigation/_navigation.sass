@@ -37,7 +37,7 @@ body
     justify-content: flex-start
 .banner-carousel
   .flickity-page-dots
-    bottom: 40px
+    bottom: 15px
     left: calc((100% - 1340px) / 2 + 58px)
 .breadcrumb-item + .breadcrumb-item::before
   background: url(../img/general/polygon.svg) no-repeat center/80%
@@ -46,3 +46,17 @@ body
   margin-right: 10px
 .breadcrumb-item a
   text-decoration: underline
+
+.manufacturers-carousel
+  .flickity-page-dots
+    flex-wrap: nowrap
+    .dot
+      height: 4px
+      width: 40px
+      margin: 0
+      border-radius: 0
+      transition: none
+      background: #c4c5c6!important
+    .dot.is-selected 
+      transform: scalex(1.5)
+      background: $red!important

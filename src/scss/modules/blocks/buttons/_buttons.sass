@@ -16,10 +16,22 @@
   color: #fff
   background-color: $red
   border-color: $red
+.hamburger--minus .hamburger-inner::before, .hamburger--minus .hamburger-inner::after
+  transition: transform .6s , bottom 0.08s 0s ease-out, top 0.08s 0s ease-out, opacity 0s linear
+  transform-origin: left
+
+.hamburger:hover
+  .hamburger-inner::before
+    transform: scalex(1.15)
+  .hamburger-inner::after
+    transform: scalex(0.85)
 
 .hamburger-inner::before
   width: 30px
+
 .hamburger-inner::after
   width: 35px
+
 .hamburger-inner
   width: 32.5px
+

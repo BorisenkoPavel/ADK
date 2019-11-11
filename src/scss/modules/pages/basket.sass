@@ -9,12 +9,22 @@
 	.card-item__price-container
 		width: 100%
 		justify-content: flex-start
+		flex-direction: column
 	.card-item__price
 		text-align: left
 		flex: 0 0 35%
 		margin-right: 0!important
+		margin-bottom: 1rem
 	.count-block
 		flex: 0 0 35%
+		margin-bottom: 1rem
+	.card-item__list.card-item__list--row
+		.card-item__price-container
+			flex-direction: row
+		.card-item__price
+			margin-bottom: 0
+		.count-block
+			margin-bottom: 0
 .delete-icon
 	width: 50px
 	height: 50px
@@ -49,3 +59,39 @@
 .checkout-block__total
 	font-size: 1.875rem
 	font-weight: bold
+
+.card-item__list .grid__cell:first-of-type
+	.card-item:first-of-type
+		position: relative
+		&:after
+			content: 'Наименование'
+			position: absolute
+			bottom: 120%
+			opacity: .6
+			font-size: 1.375rem
+			line-height: 2.1875rem
+			font-weight: bold
+	& .count-block:before
+		content: 'Количество'
+		position: absolute
+		bottom: 120%
+		opacity: .6
+		font-size: 1.375rem
+		line-height: 2.1875rem
+		font-weight: bold
+	& .card-item__price:before
+		content: 'Цена'
+		position: absolute
+		bottom: 120%
+		opacity: .6
+		font-size: 1.375rem
+		line-height: 2.1875rem
+		font-weight: bold
+	& .card-item__price.card-item__price--total:before
+		content: 'Итого'
+		position: absolute
+		bottom: 120%
+		opacity: .6
+		font-size: 1.375rem
+		line-height: 2.1875rem
+		font-weight: bold

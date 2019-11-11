@@ -66,25 +66,31 @@ block content
 							p Смесители для раковины <br>Solone 
 							.square-block.text-info
 				.col-xl-9
-					.btn-group.mb-4
-						.btn.btn-primary.btn-small.rounded-pill
-							span Акриловые ванны
-							span.btn-count 18
-						.btn.btn-primary.btn-small.rounded-pill
-							span Стальные ванны
-							span.btn-count 26
-						.btn.btn-primary.btn-small.rounded-pill
-							span Чугунные ванны
-							span.btn-count 32
-						.btn.btn-primary.btn-small.rounded-pill
-							span Ванны из кварила
-							span.btn-count 8
-						.btn.btn-primary.btn-small.rounded-pill
-							span Керамические ванны
-							span.btn-count 6
-						.btn.btn-primary.btn-small.rounded-pill
-							span Каменные ванны
-							span.btn-count 8
+					.grid.btn-group.mb-4
+						.grid-cell
+							.btn.btn-primary.btn-small.rounded-pill
+								span Акриловые ванны
+								span.btn-count 18
+						.grid-cell
+							.btn.btn-primary.btn-small.rounded-pill
+								span Стальные ванны
+								span.btn-count 26
+						.grid-cell
+							.btn.btn-primary.btn-small.rounded-pill
+								span Чугунные ванны
+								span.btn-count 32
+						.grid-cell
+							.btn.btn-primary.btn-small.rounded-pill
+								span Ванны из кварила
+								span.btn-count 8
+						.grid-cell
+							.btn.btn-primary.btn-small.rounded-pill
+								span Керамические ванны
+								span.btn-count 6
+						.grid-cell
+							.btn.btn-primary.btn-small.rounded-pill
+								span Каменные ванны
+								span.btn-count 8
 					.filtr-group.mb-3
 						.filtr-item__selected.mr-4 Страна производитель: 
 							a(href="" class='text-dark link') Польша
@@ -109,171 +115,181 @@ block content
 						.sort-item.sort-item--view-icon Вид:
 								+icon('row','sort-icon') 
 								+icon('column','sort-icon active')
-					.card-item__list.pb-5
-						.card-item.card-item--new.text-center
-							.card-item__img.embed-responsive.embed-responsive-4by3
-								.embed-responsive-item(style="background: url('img/content/card-img1.jpg') no-repeat center/contain")
-							.card-item__body
-								.card-item__header
-									.text-big.card-item__name.mb-3 Ванна стальная EMALIA
-									.spec-list.d-flex
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Производитель:</span> Польша
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Размер:</span> 170x70
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Глубина:</span> 390
-								.card-item__footer
-									.card-item__price-container
-										.card-item__price 76 300 ₽
-										.count-block.d-flex.align-items-end
-											.count-block__minus -
-											input.count-block__value(type='text', value='1')
-											.count-block__plus +
-									.btn.btn-danger.rounded-pill Купить
-						.card-item.text-center
-							.card-item__img.embed-responsive.embed-responsive-4by3
-								.embed-responsive-item(style="background: url('img/content/card-img2.jpg') no-repeat center/contain")
-							.card-item__body
-								.card-item__header
-									.text-big.card-item__name.mb-3 Ванна стальная REIMAR
-									.spec-list.d-flex
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Производитель:</span> Польша
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Размер:</span> 170x70
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Глубина:</span> 390
-								.card-item__footer
-									.card-item__price-container
-										.card-item__price 420 ₽
-										.count-block.d-flex.align-items-end
-											.count-block__minus -
-											input.count-block__value(type='text', value='1')
-											.count-block__plus +
-									.btn.btn-danger.rounded-pill Купить
-						.card-item.text-center
-							.card-item__img.embed-responsive.embed-responsive-4by3
-								.embed-responsive-item(style="background: url('img/content/card-img3.jpg') no-repeat center/contain")
-							.card-item__body
-								.card-item__header
-									.text-big.card-item__name.mb-3 Ванна стальная ROCA
-									.spec-list.d-flex
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Производитель:</span> Испания
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Размер:</span> 150x75
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Глубина:</span> 430
-								.card-item__footer
-									.card-item__price-container
-										.card-item__price 420 ₽
-										.count-block.d-flex.align-items-end
-											.count-block__minus -
-											input.count-block__value(type='text', value='1')
-											.count-block__plus +
-									.btn.btn-danger.rounded-pill Купить
-						.card-item.text-center
-							.card-item__img.embed-responsive.embed-responsive-4by3
-								.embed-responsive-item(style="background: url('img/content/card-img4.jpg') no-repeat center/contain")
-							.card-item__body
-								.card-item__header
-									.text-big.card-item__name.mb-3 Ванна стальная EMALIA
-									.spec-list.d-flex
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Производитель:</span> Польша
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Размер:</span> 170x70
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Глубина:</span> 390
-								.card-item__footer
-									.card-item__price-container
-										.card-item__price 423 420 ₽
-										.count-block.d-flex.align-items-end
-											.count-block__minus -
-											input.count-block__value(type='text', value='1')
-											.count-block__plus +
-									.btn.btn-danger.rounded-pill Купить
-						.card-item.text-center
-							.card-item__img.embed-responsive.embed-responsive-4by3
-								.embed-responsive-item(style="background: url('img/content/card-img5.jpg') no-repeat center/contain")
-							.card-item__body
-								.card-item__header
-									.text-big.card-item__name.mb-3 Ванна стальная REIMAR
-									.spec-list.d-flex
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Производитель:</span> Польша
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Размер:</span> 170x70
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Глубина:</span> 390
-								.card-item__footer
-									.card-item__price-container
-										.card-item__price 420 ₽
-										.count-block.d-flex.align-items-end
-											.count-block__minus -
-											input.count-block__value(type='text', value='1')
-											.count-block__plus +
-									.btn.btn-danger.rounded-pill Купить
-						.card-item.text-center
-							.card-item__img.embed-responsive.embed-responsive-4by3
-								.embed-responsive-item(style="background: url('img/content/card-img6.jpg') no-repeat center/contain")
-							.card-item__body
-								.card-item__header
-									.text-big.card-item__name.mb-3 Ванна стальная ROCA
-									.spec-list.d-flex
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Производитель:</span> Испания
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Размер:</span> 150x75
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Глубина:</span> 430
-								.card-item__footer
-									.card-item__price-container
-										.card-item__price 420 ₽
-										.count-block.d-flex.align-items-end
-											.count-block__minus -
-											input.count-block__value(type='text', value='1')
-											.count-block__plus +
-									.btn.btn-danger.rounded-pill Купить
-						a.nolink.banner-block(href="" style="background: url('img/content/banner-wide.jpg') no-repeat center/cover")
-							.banner-block__content
-								h4.banner-block__title.text-primary.b Новое поступление смесителей <br> для раковины
-								p Смесители для раковины <br> Solone
-								.square-block.text-info
-						.card-item.text-center
-							.card-item__img.embed-responsive.embed-responsive-4by3
-								.embed-responsive-item(style="background: url('img/content/card-img7.jpg') no-repeat center/contain")
-							.card-item__body
-								.card-item__header
-									.text-big.card-item__name.mb-3 Ванна стальная EMALIA
-									.spec-list.d-flex
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Производитель:</span> Польша
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Размер:</span> 170x70
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Глубина:</span> 390
-								.card-item__footer
-									.card-item__price-container
-										.card-item__price 420 ₽
-										.count-block.d-flex.align-items-end
-											.count-block__minus -
-											input.count-block__value(type='text', value='1')
-											.count-block__plus +
-									.btn.btn-danger.rounded-pill Купить
-						.card-item.text-center
-							.card-item__img.embed-responsive.embed-responsive-4by3
-								.embed-responsive-item(style="background: url('img/content/card-img8.jpg') no-repeat center/contain")
-							.card-item__body
-								.card-item__header
-									.text-big.card-item__name.mb-3 Ванна стальная REIMAR
-									.spec-list.d-flex
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Производитель:</span> Польша
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Размер:</span> 170x70
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Глубина:</span> 390
-								.card-item__footer
-									.card-item__price-container
-										.card-item__price 420 ₽
-										.count-block.d-flex.align-items-end
-											.count-block__minus -
-											input.count-block__value(type='text', value='1')
-											.count-block__plus +
-									.btn.btn-danger.rounded-pill Купить
-						.card-item.text-center
-							.card-item__img.embed-responsive.embed-responsive-4by3
-								.embed-responsive-item(style="background: url('img/content/card-img9.jpg') no-repeat center/contain")
-							.card-item__body
-								.card-item__header
-									.text-big.card-item__name.mb-3 Ванна стальная ROCA
-									.spec-list.d-flex
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Производитель:</span> Испания
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Размер:</span> 150x75
-										small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Глубина:</span> 430
-								.card-item__footer
-									.card-item__price-container
-										.card-item__price 420 ₽
-										.count-block.d-flex.align-items-end
-											.count-block__minus -
-											input.count-block__value(type='text', value='1')
-											.count-block__plus +
-									.btn.btn-danger.rounded-pill Купить
+					.grid-wrapper
+						.grid.card-item__list.pb-5
+							.grid-cell
+								.card-item.card-item--new.text-center
+									.card-item__img.embed-responsive.embed-responsive-4by3
+										.embed-responsive-item(style="background: url('img/content/card-img1.jpg') no-repeat center/contain")
+									.card-item__body
+										.card-item__header
+											.text-big.card-item__name.mb-3 Ванна стальная EMALIA sdq qweqwda
+											.spec-list.d-flex
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Производитель:</span> Польша
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Размер:</span> 170x70
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Глубина:</span> 390
+										.card-item__footer
+											.card-item__price-container
+												.card-item__price 76 300 ₽
+												.count-block.d-flex.align-items-end
+													.count-block__minus -
+													input.count-block__value(type='text', value='1')
+													.count-block__plus +
+											.btn.btn-danger.rounded-pill Купить
+							.grid-cell
+								.card-item.text-center
+									.card-item__img.embed-responsive.embed-responsive-4by3
+										.embed-responsive-item(style="background: url('img/content/card-img2.jpg') no-repeat center/contain")
+									.card-item__body
+										.card-item__header
+											.text-big.card-item__name.mb-3 Ванна стальная REIMAR
+											.spec-list.d-flex
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Производитель:</span> Польша
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Размер:</span> 170x70
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Глубина:</span> 390
+										.card-item__footer
+											.card-item__price-container
+												.card-item__price 420 ₽
+												.count-block.d-flex.align-items-end
+													.count-block__minus -
+													input.count-block__value(type='text', value='1')
+													.count-block__plus +
+											.btn.btn-danger.rounded-pill Купить
+							.grid-cell
+								.card-item.text-center
+									.card-item__img.embed-responsive.embed-responsive-4by3
+										.embed-responsive-item(style="background: url('img/content/card-img3.jpg') no-repeat center/contain")
+									.card-item__body
+										.card-item__header
+											.text-big.card-item__name.mb-3 Ванна стальная ROCA
+											.spec-list.d-flex
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Производитель:</span> Испания
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Размер:</span> 150x75
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Глубина:</span> 430
+										.card-item__footer
+											.card-item__price-container
+												.card-item__price 420 ₽
+												.count-block.d-flex.align-items-end
+													.count-block__minus -
+													input.count-block__value(type='text', value='1')
+													.count-block__plus +
+											.btn.btn-danger.rounded-pill Купить
+							.grid-cell
+								.card-item.text-center
+									.card-item__img.embed-responsive.embed-responsive-4by3
+										.embed-responsive-item(style="background: url('img/content/card-img4.jpg') no-repeat center/contain")
+									.card-item__body
+										.card-item__header
+											.text-big.card-item__name.mb-3 Ванна стальная EMALIA
+											.spec-list.d-flex
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Производитель:</span> Польша
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Размер:</span> 170x70
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Глубина:</span> 390
+										.card-item__footer
+											.card-item__price-container
+												.card-item__price 423 420 ₽
+												.count-block.d-flex.align-items-end
+													.count-block__minus -
+													input.count-block__value(type='text', value='1')
+													.count-block__plus +
+											.btn.btn-danger.rounded-pill Купить
+							.grid-cell
+								.card-item.text-center
+									.card-item__img.embed-responsive.embed-responsive-4by3
+										.embed-responsive-item(style="background: url('img/content/card-img5.jpg') no-repeat center/contain")
+									.card-item__body
+										.card-item__header
+											.text-big.card-item__name.mb-3 Ванна стальная REIMAR
+											.spec-list.d-flex
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Производитель:</span> Польша
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Размер:</span> 170x70
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Глубина:</span> 390
+										.card-item__footer
+											.card-item__price-container
+												.card-item__price 420 ₽
+												.count-block.d-flex.align-items-end
+													.count-block__minus -
+													input.count-block__value(type='text', value='1')
+													.count-block__plus +
+											.btn.btn-danger.rounded-pill Купить
+							.grid-cell
+								.card-item.text-center
+									.card-item__img.embed-responsive.embed-responsive-4by3
+										.embed-responsive-item(style="background: url('img/content/card-img6.jpg') no-repeat center/contain")
+									.card-item__body
+										.card-item__header
+											.text-big.card-item__name.mb-3 Ванна стальная ROCA
+											.spec-list.d-flex
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Производитель:</span> Испания
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Размер:</span> 150x75
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Глубина:</span> 430
+										.card-item__footer
+											.card-item__price-container
+												.card-item__price 420 ₽
+												.count-block.d-flex.align-items-end
+													.count-block__minus -
+													input.count-block__value(type='text', value='1')
+													.count-block__plus +
+											.btn.btn-danger.rounded-pill Купить
+							a.nolink.banner-block(href="" style="background: url('img/content/banner-wide.jpg') no-repeat center/cover")
+								.banner-block__content
+									h4.banner-block__title.text-primary.b Новое поступление смесителей <br> для раковины
+									p Смесители для раковины <br> Solone
+									.square-block.text-info
+							.grid-cell
+								.card-item.text-center
+									.card-item__img.embed-responsive.embed-responsive-4by3
+										.embed-responsive-item(style="background: url('img/content/card-img7.jpg') no-repeat center/contain")
+									.card-item__body
+										.card-item__header
+											.text-big.card-item__name.mb-3 Ванна стальная EMALIA
+											.spec-list.d-flex
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Производитель:</span> Польша
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Размер:</span> 170x70
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Глубина:</span> 390
+										.card-item__footer
+											.card-item__price-container
+												.card-item__price 420 ₽
+												.count-block.d-flex.align-items-end
+													.count-block__minus -
+													input.count-block__value(type='text', value='1')
+													.count-block__plus +
+											.btn.btn-danger.rounded-pill Купить
+							.grid-cell
+								.card-item.text-center
+									.card-item__img.embed-responsive.embed-responsive-4by3
+										.embed-responsive-item(style="background: url('img/content/card-img8.jpg') no-repeat center/contain")
+									.card-item__body
+										.card-item__header
+											.text-big.card-item__name.mb-3 Ванна стальная REIMAR
+											.spec-list.d-flex
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Производитель:</span> Польша
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Размер:</span> 170x70
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Глубина:</span> 390
+										.card-item__footer
+											.card-item__price-container
+												.card-item__price 420 ₽
+												.count-block.d-flex.align-items-end
+													.count-block__minus -
+													input.count-block__value(type='text', value='1')
+													.count-block__plus +
+											.btn.btn-danger.rounded-pill Купить
+							.grid-cell
+								.card-item.text-center
+									.card-item__img.embed-responsive.embed-responsive-4by3
+										.embed-responsive-item(style="background: url('img/content/card-img9.jpg') no-repeat center/contain")
+									.card-item__body
+										.card-item__header
+											.text-big.card-item__name.mb-3 Ванна стальная ROCA
+											.spec-list.d-flex
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Производитель:</span> Испания
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Размер:</span> 150x75
+												small.spec-list__item.not-important.pb-2 <span class="spec-list__name-hidden">Глубина:</span> 430
+										.card-item__footer
+											.card-item__price-container
+												.card-item__price 420 ₽
+												.count-block.d-flex.align-items-end
+													.count-block__minus -
+													input.count-block__value(type='text', value='1')
+													.count-block__plus +
+											.btn.btn-danger.rounded-pill Купить

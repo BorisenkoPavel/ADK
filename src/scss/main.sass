@@ -1,4 +1,100 @@
 @import start
+.electroprivod, .electroprivod-all
+  transition: .8s linear
+  transform-origin: 50% 50%
+
+.electroprivod
+  transform: translatex(120%)
+.catalog-item--1:hover
+  .electroprivod
+    transform: translatex(-60%)
+  .electroprivod-all
+    transform:  translateY(5%)
+.svg-icon
+  background-color: $accent
+  border-radius: 50%
+  width: 30px
+  height: 30px
+  display: inline-flex
+  justify-content: center
+  align-items: center
+.drop-svg
+  transform-origin: 50% 55%
+  position: relative
+  z-index: 1
+header
+  flex: 0 0 auto
+.valve-svg
+  transform-origin: 50% 50%
+.svg-boss
+  align-self: flex-end
+  transform-origin: bottom
+.basket-left
+  transform-origin: left
+.basket-right
+  transform-origin: right
+.svg-drop
+  transform-origin: bottom
+.big-disk
+  position: relative
+  top: 0
+.small-disk
+  position: absolute
+  top: 0.9375rem
+  right: 0.75rem
+.catalog-item__icon 
+  position: relative
+.valve-icon
+  transform-origin: center
+.steam-icon
+  position: absolute!important
+  top: -1.325rem
+  left: 5%
+  path
+    stroke-width: 3px
+    stroke: #fff
+    fill: #fff
+.red-led
+  transform-origin: center
+.svg-cap
+  transform-origin: 50% 50%
+.svg-arrow-item
+  transform-origin: 9px 41px
+.svg-drops path
+  transform-origin: 25px 14px
+.svg-item-8
+  transform-origin:  23.9px 23.7px
+.unclean-drops, .clean-drops
+  position: relative
+  z-index: 10
+.water-drop-svg--1
+  transform-origin: 50% 50%
+.gel-svg
+  transform-origin: right 39px
+.catalog-item--11
+  .catalog-item__icon
+    &:before
+      content: ''
+      position: absolute
+      width: 3rem
+      height: 3rem
+      border-radius: 50%
+      background-color: #000
+      border: 3px solid #673b3b
+      left: 5%
+  svg
+    z-index: 10
+    position: relative
+.tape-icon
+  position: relative
+  top: 2px
+.tape-icon-line
+  position: absolute
+  right: -0.3125rem
+  bottom: -0.125rem
+.catalog-icon
+  position: relative
+
 
 .banner
   margin-top: 14.0625rem
@@ -14,10 +110,19 @@
   max-width: 505px
   padding: 50px 0
 .banner-carousel
+  padding-bottom: 50px
   transform: translateY(-205px)
+  .flickity-page-dots
+    .dot.is-selected
+      background-color: $red!important
+    .dot
+      background-color: #5A6470!important
+
 .banner-item
   padding: 1.875rem 3.125rem 6.5625rem
   background: linear-gradient(90deg, rgba(8, 109, 177, 0.43) 0%, rgba(19, 110, 172, 0) 63.02%), url(../img/content/banner.jpg)
+  .btn
+    align-self: flex-start
 .square-block
   color: inherit
   position: absolute
@@ -50,12 +155,15 @@
 .section-catalog
   margin-top: -17rem
 .catalog
-  display: grid
-  grid-template-columns: repeat(3, 1fr)
-  // grid-template-rows: 200px
-  grid-gap: 20px
+  @include grid(3, 20px)
+.grid.card-item__list.card-item__list--row
+  @include grid(1, 20px)
+.grid.card-item__list
+  @include grid(4, 20px)
+
+.catalog-item
+  height: 100%
   width: 100%
-.catalog-item   
   padding: 1.5625rem 1.25rem
   background-color: #fff
   &__name
@@ -84,10 +192,10 @@
   margin-right: 1rem
 
 .card-list
-  display: grid
-  grid-template-columns: 1fr 1fr 1fr 1fr
-  grid-gap: 20px
+  @include grid(4, 20px)
 .card
+  height: 100%
+  width: 100%
   padding: 1.875rem 2.5rem 1.25rem
   overflow: hidden
   cursor: pointer
@@ -96,7 +204,7 @@
   display: flex
   flex-direction: column
   justify-content: space-between
-  .embed-responsive
+  .embed-responsive-item
     @extend .zoom-animation
   &:hover
     box-shadow: 0px 0px 15px rgba(57, 77, 92, 0.15)
@@ -130,12 +238,7 @@
     transition: .3s ease
   &__date
     margin-bottom: 0.625rem
-.news-widget
-  display: grid
-  grid-template-columns: 1fr 1fr 1fr 1fr
-  grid-gap: 20px
 .news-item.news-item--main
-  grid-column: 1/3
   .news-item__name
     font-size: 1.875rem
 .col-lg-6.position-relative
@@ -146,5 +249,9 @@
   padding-top: 3.5rem
   padding-bottom: 3.5rem
 
-
+.spec-list__item
+  span
+    margin-right: 0.625rem
+  b
+    text-align: right
 @import media

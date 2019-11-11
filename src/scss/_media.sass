@@ -9,7 +9,6 @@
     padding: 0.5rem
   .banner-carousel
     .flickity-page-dots
-      bottom: 40px
       left: calc((100% - 1140px) / 2 + 58px)
   .square-block
     left: -20%
@@ -25,7 +24,6 @@
     padding: calc(2rem + 2.5vw) 0
   .banner-carousel
     .flickity-page-dots
-      bottom: 40px
       left: calc((100% - 960px) / 2 + 58px)
   .nav
     font-size: 0.875rem
@@ -52,8 +50,21 @@
       width: 33.3333%
 // ≥992px
 +media-breakpoint-down(md)
+  
+  .addres-block
+    max-width: 250px
+  .card-item__list .grid__cell:first-of-type
+    .card-item:first-of-type
+      &:after
+        display: none
+    & .count-block:before
+      display: none
+    & .card-item__price:before
+      display: none
+    & .card-item__price.card-item__price--total:before
+      display: none
   .menu-content
-    top: 90px
+    // top: 90px
   .logo
     img
       width: auto!important
@@ -62,8 +73,6 @@
     width: 50%
     margin: auto
     margin-bottom: 1.5rem
-  .card-item__list
-    grid-template-columns: 1fr 1fr
   .btn-group, .filtr-group, .sort-item.sort-item--view-icon
     display: none!important
   .toggle-container.container
@@ -71,20 +80,18 @@
     max-width: 100%
   .header-bottom
     position: static
-  header
-    position: relative
   .banner-carousel
     transform: translateY(0)
   .banner
     padding: 0
   .section-catalog, .banner
     margin: 0
-  header
+  .header
     max-width: 720px
     margin: auto
     width: 100%
     padding: 15px 0
-    position: static
+    // position: static
   .hamburger
     padding: 0!important
     padding-left: 15px!important
@@ -103,16 +110,11 @@
     margin-left: auto
   .banner-carousel
     .flickity-page-dots
-      bottom: 20px
       left: 28px
   .banner-item
     background: linear-gradient(90deg, rgba(8, 109, 177, 0.53) 20%, rgba(19, 110, 172, 0) 100%), url(../img/content/banner.jpg)
   .banner__text
     max-width: 100%
-  .catalog
-    grid-template-columns: repeat(2, 1fr)
-  .card-list
-    grid-template-columns: repeat(2, 1fr)
   .manufacturers-carousel .carousel-cell
     width: 33.3333%
   .news-item__desc
@@ -140,16 +142,34 @@
     opacity: 1
 // ≥768px
 +media-breakpoint-down(sm)
-  .catalog
-    grid-template-columns: repeat(1, 1fr)
-  header
-    max-width: 540px
-  .news-widget
-    grid-template-columns: 1fr
+  .header
+    max-width: 100%
   .news-item__container
     text-align: center
+  .soc
+    padding-top: 1.875rem
+  .banner-carousel .flickity-page-dots
+    left: 15px
+  .breadcrumb
+    display: none
+  .product-card__price
+    width: 100%
+    margin-right: 0!important
+  .available-block.card-item__price-container
+    justify-content: space-between!important
+  .count-block
+    margin-right: 0!important
+  .company-carousel .flickity-page-dots, .banner-carousel .flickity-page-dots
+    justify-content: center
+  .menu-content .catalog.grid
+    // margin: 0!important
 // ≥576px
 +media-breakpoint-down(xs)
+  .banner-carousel .flickity-page-dots
+    bottom: -5px
+  .menu-content
+    .catalog-item__link-items
+      display: none
   .saection-gallery
     .carousel-cell
       width: 100%
@@ -166,23 +186,17 @@
   .card-item__price
     font-size: 1.3744rem
   .product-card__photo
-    width: 75%
+    width: 85%
   .card-item__img
     width: 70%
     margin: auto
     margin-bottom: 1rem
-  .card-item__list 
-    grid-template-columns: 1fr
   .company-content
     padding: 0
   .square-block
     display: none
   .banner-item
     padding: 1.25rem
-  .catalog
-    grid-template-columns: repeat(1, 1fr)
-  .card-list
-    grid-template-columns: repeat(1, 1fr)
   .manufacturers-carousel .carousel-cell
     width: 100%
   .sort-item
@@ -191,7 +205,18 @@
     width: 100%
     & > span
       display: none
-    
+  .checkout-block
+    flex-direction: column
+    .checkout-block__total
+      margin-right: 0!important
+      margin-bottom: 1.5rem
+  .more-photos .carousel-cell
+    width: 20%!important
+  .payment-option img
+    width: 11%!important
+  .section-product-card .product-card__photo::after
+    bottom: auto
+    top: 1.25rem
 /*==========  mobile First  ==========*/
 
 // ≤576px

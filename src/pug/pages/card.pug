@@ -13,26 +13,37 @@ block content
 		.container
 			h1.section-title Ванна стальная EMALIA
 			.row
-				.col-lg-6.d-flex.align-items-center
+				.col-lg-6
 					.embed-responsive.embed-responsive-1by1.product-card__photo
 						a.embed-responsive-item(data-fancybox="gallery" href="img/content/card-img4.jpg" style="background: url(img/content/card-img4.jpg) no-repeat center/contain")
 				.col-lg-6
-					h5.b.mb-4 Характеристики
-					.spec-list.d-flex.mb-2
-						.spec-list__item.border-bottom.d-flex.justify-content-between.pb-2.mb-3 <span>Производитель:</span> <b>Испания</b>
-						.spec-list__item.border-bottom.d-flex.justify-content-between.pb-2.mb-3 <span>Размер:</span> <b>150x75</b>
-						.spec-list__item.border-bottom.d-flex.justify-content-between.pb-2.mb-3 <span>Глубина:</span> <b>430</b>
-					.card-item__price-container.flex-column.align-items-start.border-bottom.mb-0.pb-4
-						.product-card__price 363 ₽/шт
-						.count-block.d-flex.align-items-end.mb-4
+					.available-block.card-item__price-container.flex-row.flex-wrap.justify-content-start.mb-4.pb-4
+						.product-card__price.mb-0.mr-5 363 ₽/шт
+						.count-block.d-flex.align-items-end.mb-0.mr-5
 							.count-block__minus -
 							input.count-block__value(type='text', value='1')
 							.count-block__plus +
-					.total-price.d-flex.justify-content-between.align-items-center.py-4
-						.card-item__price Итого: 7 363 ₽/шт
-						.btn.btn-danger.rounded-pill Купить
+						.btn.btn-danger.rounded-pill.mb-0 В корзину
+						.card-item__price.w-100.mt-4 Итого: 7 363 ₽/шт
+
+					#tabs.available-block.mb-4
+						ul
+							li
+								a.nolink(href='#tabs-1'): h4.b.mr-5 Характеристики
+							li
+								a.nolink(href='#tabs-2'): h4.b Описание
+						#tabs-1
+							h5.b.mb-4 
+							.spec-list.d-flex
+								.spec-list__item.border-bottom.d-flex.justify-content-between.pb-2 <span>Производитель:</span> <b>Испания</b>
+								.spec-list__item.border-bottom.d-flex.justify-content-between.pb-2 <span>Размер:</span> <b>150x75</b>
+								.spec-list__item.border-bottom.d-flex.justify-content-between.pb-2.mb-0 <span>Глубина:</span> <b>430</b>
+						#tabs-2
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid incidunt molestias atque dicta soluta, necessitatibus blanditiis dolore consequuntur delectus numquam recusandae at tenetur obcaecati quas debitis cupiditate vero doloribus ipsa nisi voluptates labore odio voluptate. Rem, cumque neque! Nemo accusamus quae perspiciatis sequi alias consequuntur sunt reprehenderit aperiam ducimus! 
+				
 					.available-block
-						.spec-list.d-flex.mb-2
+						h4.b.mb-4 Наличие на складах
+						.spec-list.d-flex
 							.spec-list__item.border-bottom.d-flex.justify-content-between.pb-2 <span>Барнаул</span> <b>В наличии</b>
 							.spec-list__item.border-bottom.d-flex.justify-content-between.pb-2 <span>Бийск</span> <b>Через 7 дней</b>
 							.spec-list__item.border-bottom.d-flex.justify-content-between.pb-2 <span>Рубцовск</span> <b>В наличии</b>

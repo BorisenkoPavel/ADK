@@ -1,2 +1,25 @@
 .modal-footer, .modal-header
 	border: none
+
+.go-to-top.is-active
+	transform: translatey(0)
+.go-to-top
+	position: fixed
+	right: 20px
+	bottom: 10vh
+	color: $accent!important
+	cursor: pointer
+	padding: 10px
+	transform: translatey(500px)
+	transition: .3s ease
+	z-index: 200
+	&:after
+		content: ''
+		position: relative
+		bottom: 2px
+		width: 8px
+		height: 8px
+		margin-left: 10px
+		display: inline-block
+		border: 8px solid transparent
+		border-bottom: 8px solid $accent

@@ -9,6 +9,7 @@
   "author": "Ethan Mograine",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.6.1",
     "browser-sync": "^2.26.7",
     "del": "^5.0.0",
     "emitty": "^1.4.1",
@@ -39,7 +40,9 @@
     "imagemin-pngquant": "^8.0.0"
   },
   "dependencies": {
+    "animejs": "^3.1.0",
     "aos": "^2.3.4",
+    "gutter-grid": "^7.0.0",
     "svg4everybody": "^2.1.9",
     "swiper": "^4.5.0",
     "vue-flickity": "^1.2.1"

@@ -57,25 +57,25 @@ gulp.task('browser-sync', function() {
 
 gulp.task('styles', function() {
   return gulp.src('src/scss/main.'+syntax+'')
-  .pipe(sourcemaps.init())
   .pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
   .pipe(plumber())
   .pipe(rename({ suffix: '.min', prefix : '' }))
-  .pipe(autoprefixer(['last 15 versions']))
-  .pipe(sourcemaps.write())
+  .pipe(autoprefixer({
+		grid: true,
+		// overrideBrowserslist: ['last 10 versions']
+  }))
+  .pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
   .pipe(gulp.dest('build/css'))
   .pipe(browserSync.stream())
 });
 
 gulp.task('styles:build', function() {
   return gulp.src('src/scss/**/*.'+syntax+'')
-  .pipe(sourcemaps.init())
   .pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
   .pipe(plumber())
   .pipe(rename({ suffix: '.min', prefix : '' }))
-  .pipe(autoprefixer(['last 15 versions']))
+  .pipe(autoprefixer(['last 10 versions']))
   .pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
-  .pipe(sourcemaps.write())
   .pipe(gulp.dest('build/css'))
   .pipe(browserSync.stream())
 });
@@ -84,6 +84,7 @@ gulp.task('scripts', function() {
   return gulp.src([
     'node_modules/swiper/dist/js/swiper.min.js',
     'node_modules/aos/dist/aos.js',
+    'node_modules/animejs/lib/anime.min.js',
     'node_modules/svg4everybody/dist/svg4everybody.min.js',
     'src/js/common.js', // Always at the end
     ])

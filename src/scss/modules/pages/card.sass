@@ -5,7 +5,7 @@
 
 .available-block
 	background: #FFFFFF
-	box-shadow: 0px 0px 15px rgba(57, 77, 92, 0.15)
+	border: 1px solid #EFEFEF
 	padding: 1.5625rem
 
 .section-product-card
@@ -19,6 +19,7 @@
 	.card
 		padding: 1.5rem
 		width: 100%
+		height: auto
 	.spec-list
 		margin-bottom: 1.5rem
 .available-block
@@ -26,6 +27,7 @@
 		margin-bottom: 1rem
 		&:last-of-type
 			margin-bottom: 0
+			border-bottom: none!important
 
 .carousel-cell .card
 	.btn
@@ -34,14 +36,31 @@
 
 section.section-related
 	padding-bottom: 8rem
+.section-product-card 
+	.product-card__photo
+		border: 1px solid #EFEFEF
+		&::after
+			content: ''
+			position: absolute
+			width: 41px
+			height: 41px
+			background: url(../img/general/zoom.svg)
+			bottom: 1.25rem
+			right: 1.25rem
 
-.product-card__photo
-	border: 1px solid #EFEFEF
-	&::after
-		content: ''
-		position: absolute
-		width: 41px
-		height: 41px
-		background: url(../img/general/zoom.svg)
-		bottom: 1.25rem
-		right: 1.25rem
+	#tabs
+		ul
+			display: flex
+			list-style-type: none
+			padding: 0
+		.ui-tabs-tab
+			opacity: .6
+			transition: .3s ease
+			&:hover
+				opacity: 1
+		.ui-tabs-active
+			opacity: 1
+	.card-item__price-container
+		.card-item__price
+			font-size: 20px
+			opacity: .6

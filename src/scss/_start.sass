@@ -11,6 +11,7 @@ body
 	height: 100%
 	font-family: $d-font
 	line-height: 1.4
+	overflow-x: hidden
 
 h1
 	font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem
@@ -82,7 +83,6 @@ button
 	
 .content
 	flex: 1 0 auto
-	overflow-x: hidden
 section
 	position: relative
 	padding: 3.75rem 0
@@ -118,3 +118,10 @@ small
 	-ms-backface-visibility: hidden
 	&:hover
 		transform: scale(1.1)
+
+.grid-cell
+	display: flex
+
+.z-index
+	position: relative
+	z-index: 50

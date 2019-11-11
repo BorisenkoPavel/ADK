@@ -9,24 +9,36 @@
   max-width: 600px
   width: 100%
 .search
-  flex: 1 1 100%
+  flex: 1 1
   position: relative
+  margin-bottom: 0
   input
     border: 1px solid #DEE6EB
     line-height: 50px
+    height: 50px
     padding: 0 10px
     font-style: italic
+    &:focus
+      box-shadow: 0 0 5px rgba(0,0,0, .2)
+    &:focus ~ img
+      transform: scale(.8)
 .search-icon
   position: absolute
   right: 10px
   top: 0
   bottom: 0
   margin: auto
+  transition: .3s ease
+  transform-origin: left
+  pointer-events: none
 .icon-link-block
   white-space: nowrap
+  display: flex
+  align-items: center
 .header-bottom
   position: relative
-
+  background: #fff
+  transition: .3s ease
 .menu-content
   position: absolute
   top: 100%
@@ -44,3 +56,30 @@
   pointer-events: all
   transition: all 0.3s
 
+.svg-icon
+  position: relative
+  .icon-link-block__num
+    position: absolute
+    width: 20px
+    height: 20px
+    background-color: $red
+    color: #fff
+    font-weight: bold
+    font-size: 13px
+    border-radius: 50%
+    bottom: 60%
+    left: 60%
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+.header-bottom.is-active
+  z-index: 1000
+  position: fixed
+  left: 0
+  right: 0
+  top: 0
+  padding: 10px 0
+  box-shadow: 0px 5px 6px -2px rgba(0,0,0, .2)
+  // transform: translatey(200px)
